@@ -72,7 +72,7 @@ function UserTable(): JSX.Element {
     <>
       <div className='w-full'>
         <SortingVariants/>
-        <div className='w-full bg-white p-4 rounded-md'>
+        <div className='w-full min-w-[800px] bg-white p-4 rounded-md'>
           <Pagination
             currentPage={currentPage}
             elementsPerPage={import.meta.env.VITE_MAX_ELEMENTS_PER_PAGE}

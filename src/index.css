@@ -34,7 +34,7 @@
     @apply border-t-[1px] border-background
   }
   .user-table td {
-    @apply py-4
+    @apply py-4 overflow-hidden text-ellipsis
   }
   .user-table tr td:first-child {
     @apply text-username font-bold

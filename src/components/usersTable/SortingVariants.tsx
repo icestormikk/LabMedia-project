@@ -11,7 +11,7 @@ function SortingVariants(): JSX.Element {
   const dispatch = useAppDispatch()
 
   return (
-    <div className='flex w-full gap-2 text-names-tablet pb-4'>
+    <div className='flex w-full gap-4 text-names-tablet pb-4 text-sm'>
       <p>Сортировка:</p>
       {Object.values(SortingMode).map((mode, index) => (
         <p
