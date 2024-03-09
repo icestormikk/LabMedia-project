@@ -4,7 +4,7 @@
 
 ## Запуск приложения (npm)
 
-```bash
+```console
 git clone https://github.com/icestormikk/LabMedia-project.git
 npm install
 npm run dev #или npm run build && npm run preview
