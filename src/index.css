@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply leading-normal font-normal text-[rgba(255,255,255,0.87)] bg-[#242424];
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  :focus-visible {
+    @apply outline-none
+  }
+  #root {
+    @apply w-full
+  }
+  body {
+    @apply bg-[#efefef]
+  }
+}
+
+@layer components {
+  .user-table {
+    @apply w-full min-w-[600px] text-font font-semibold
+  }
+  .user-table th {
+    @apply text-left font-normal text-sm py-4
+  }
+  .user-table tbody tr {
+    @apply border-t-[1px] border-background
+  }
+  .user-table td {
+    @apply py-4
+  }
+  .user-table tr td:first-child {
+    @apply text-username font-bold
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @apply text-[#213547] bg-white;
+  }
+  a:hover {
+    @apply text-[#747bff];
+  }
+  button {
+    @apply bg-[#f9f9f9];
+  }
+}
