@@ -1,4 +1,3 @@
-import React from 'react';
 import { SortingMode, setSorting } from '../../libs/redux/slices/userTableSlice';
 import { useAppDispatch, useAppSelector } from '../../libs/redux/hooks';
 
