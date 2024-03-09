@@ -67,6 +67,12 @@ function UserTable(): JSX.Element {
     },
     [dispatch]
   );
+  React.useEffect(
+    () => {
+      setCurrentPage(1)
+    },
+    [query]
+  )
 
   return (
     <>
